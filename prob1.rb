@@ -1,5 +1,5 @@
 def extract_hashtags(text)
-  pattern = nil
+  pattern = /#\w+/
   hashtags = text.scan(pattern)
   hashtags.flatten
 end
