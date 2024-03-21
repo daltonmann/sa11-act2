@@ -1,5 +1,5 @@
 def valid_password?(password)
-  pattern = nil
+  pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,16}$/
   password.match?(pattern)
 end
 
